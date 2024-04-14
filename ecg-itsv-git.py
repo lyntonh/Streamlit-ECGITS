@@ -14,7 +14,6 @@ if "messages" not in st.session_state.keys(): # Initialize the chat messages his
         {"role": "assistant", "content": "Ask me a question about electrocardiograms (ECG)?"}
     ]
 #***NB Put in OpenAI API NB***
-os.environ["OPENAI_API_KEY"] = "sk-***"
 from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.core.settings import Settings
